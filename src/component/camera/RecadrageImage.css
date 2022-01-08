@@ -1,0 +1,106 @@
+.global
+{
+    width: 100%;
+    height: 90vh;
+}
+
+.recadrageimage
+{
+    /* width: 100%; */
+    height: 70vh;
+    margin: auto;
+    justify-content: center;
+    background-color:black;
+    
+}
+
+.recadrageimage_image
+{
+    /* width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center; */
+    /* background-position: 40%;  */
+    /* background-position-x: 50%;
+    background-position-y: 50%;   */
+    /* width: 100%;
+    height: 64vh;
+    object-fit: cover;
+    object-position: center; */
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-repeat: no-repeat;
+    /* background-position-x: 50%; */
+    /* background-position-y: 50%;  */
+    background-size: cover;
+   
+}
+
+.recadrageimage_image--top
+{
+    text-align: center;
+}
+
+.recadrageimage_image--down
+{
+    text-align: center;
+}
+
+.recadrageimage_image--center
+{
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5vh;
+}
+
+
+.fa-caret-left
+{
+    color: white;
+    font-size: 8vh;
+    text-shadow: 2px 4px 5px black; 
+}
+
+.fa-caret-right
+{
+    color: white;
+    font-size: 8vh;
+    text-shadow: 2px 4px 5px black; 
+   
+}
+
+.fa-dot-circle
+{
+    color: white;
+    font-size: 7vh;
+    text-shadow: 2px 4px 5px black;
+} 
+
+.fa-caret-up
+{
+    color:white;
+    font-size: 8vh;
+    text-shadow: 2px 4px 5px black;
+   
+}
+
+.fa-caret-down
+{
+    color: white;
+    font-size: 8vh; 
+    text-shadow: 2px 4px 5px black;  
+}
+
+.text-recadrage
+{
+    color: #ab000d;
+    text-align: center;
+    margin: auto;
+    margin-top: 1vh;
+}

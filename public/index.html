@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/icon-72x72.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="img/icon-96x96.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <script src="%PUBLIC_URL%/assets/js/load-image.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/load-image-scale.js" ></script>
+    <script src="%PUBLIC_URL%/assets/js/load-image-meta.js" ></script>
+    <script src="%PUBLIC_URL%/assets/js/load-image-fetch.js" ></script>
+    <script src="/%PUBLIC_URL%assets/js/load-image-orientation.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/load-image-exif.js" ></script>
+    <script src="%PUBLIC_URL%/assets/js/load-image-exif-map.js" ></script>
+    <script src="%PUBLIC_URL%/assets/js/load-image-iptc.js" ></script>
+    <script src="%PUBLIC_URL%/assets/js/load-image-iptc-map.js" ></script>
+    <!--Galerie image -->
+    <title>Mastory</title>
+    <!-- Progressive web -->
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .navbar {
+        background-color: #4169e1;
+      }
+      .navbar h3 {
+        display: inline-block;
+        text-align: left;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+      }
+      .navbar a {
+        display: inline-block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .page-info {
+        padding: 10px;
+      }
+      .Current {
+        color: #2e8b57;
+      }
+      .Completed {
+        color: #ff6347;
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+
+      <!-- Progressive web -->
+      <div class="navbar">
+        <h3>Task Manager</h3>
+        <a href="/">Current Tasks</a>
+        <a href="/completed">Completed Tasks</a>
+      </div>
+      <p class="page-info">
+        Loading...
+      </p>
+      
+    </div>
+    <!-- Test de service worker-->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('worker.js').then(function(registration) {
+            console.log('Worker registration successful', registration.scope);
+          }, function(err) {
+            console.log('Worker registration failed', err);
+          }).catch(function(err) {
+            console.log(err);
+          });
+        });
+      } else {
+        console.log('Service Worker is not supported by browser.');
+      }
+    </script>
+   
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+     
+    <!-- Latest compiled and minified JavaScript -->
+    
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     
+  </body>
+</html>

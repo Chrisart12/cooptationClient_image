@@ -1,0 +1,94 @@
+.offres
+{
+    z-index: auto;
+}
+.voir
+{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    padding-bottom: 2px;
+    box-shadow: 2px 2px 3px #494949;
+    color: #494949;
+    
+}
+.coopterBouton
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.fa-chevron-left
+{
+    color:#494949;
+    margin-right: 5px;
+}
+
+.texte
+{
+    margin-top: 70px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.butonEnvFormCoopter
+{
+    color: white;
+    background: #494949;
+}
+
+.formulaire
+{
+    margin-top: 70px;
+}
+
+.offre
+{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.titre-offre, .titre-offres
+{
+    margin-top: 60px;
+}
+
+/* .form-inline
+{
+    width: 200px;
+} */
+
+.form-search
+{
+    
+     display: flex;
+     width: 330px;
+     margin-left: 15px;
+     /* margin-top: -50px */
+}
+
+/* .form-fixed
+{
+   position: fixed;
+
+} */
+
+.input-flex
+{
+    width: 320px;
+}
+
+.form-fixed-back
+{
+    position: fixed;
+    background-color: white;
+    height: 60px;
+    min-width: 400px;
+   padding-top: 10px;
+   margin-top: -60px
+}
+
+
+

@@ -1,0 +1,73 @@
+.validate-cont
+{
+    margin: auto;
+}
+
+.validate-section
+{
+    width: 90%;  
+    margin: auto;
+    background-color: white;
+    border: 1px solid #494949;
+}
+
+ .cadre
+ {
+     background-color: white;
+     padding: 2vh;
+ } 
+
+.image
+{
+    width: 40vh;
+    height: 50vh
+
+}
+
+.container
+{
+ margin-top: 1.2vh;
+}
+
+.lastname
+{
+    text-transform: uppercase;  
+    margin-left: 1vh;
+}
+
+.firstname
+{
+    text-transform: capitalize;  
+}
+
+.coeur 
+{
+   color: #f00;
+   position: relative;
+   font-size: 6.5vh;
+   bottom: 8vh;
+   right: 15vh;
+}
+
+.nom
+{
+    font-size: 1.4em;
+    margin-bottom: 1vh;
+}
+
+.story
+{
+    margin-top: -5.5vh;
+    display: block;
+}
+
+.validate--text
+{
+    overflow-wrap: break-word;
+}
+
+
+textarea:focus
+{
+    outline: 0;
+}

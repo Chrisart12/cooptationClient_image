@@ -1,0 +1,76 @@
+.cont
+{
+    margin: auto;
+}
+
+.section
+{
+    width: 90%;  
+    margin: auto;
+    background-color: white;
+    border: 1px solid #494949;
+}
+
+ .cadre
+ {
+     background-color: white;
+     padding: 18px;
+ } 
+
+/* .image
+{
+    width: 250px;
+    height: 350px;  
+
+} */
+
+.container
+{
+ margin-top: 15px;
+}
+
+.lastname
+{
+    text-transform: uppercase;  
+    margin-left: 5px;
+}
+
+.firstname
+{
+    /* text-transform: capitalize;   */
+    text-transform: uppercase;  
+}
+
+
+.coeur 
+{
+   color: #ab000d;
+   position: relative;
+   font-size: 6vh;
+   bottom: 8vh;
+   right: 15vh;
+}
+
+.nom
+{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.story
+{
+    margin-top: -30px;
+    overflow-wrap: break-word;
+    
+}
+
+.like-buton
+{
+    border: none;
+    background: none;
+}
+
+.like-buton:focus
+{
+   outline: 0;
+}
